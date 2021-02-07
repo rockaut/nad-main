@@ -13,3 +13,4 @@ steps:
   image: docker/compose:debian-1.28.2
   commands:
     - env
+    - pwd
