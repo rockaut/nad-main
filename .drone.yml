@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  event:
+  - push
+
+steps:
+- name: validate
+  pull: if-not-exists
+  image: docker/compose:debian-1.28.2
+  commands:
+    - env
