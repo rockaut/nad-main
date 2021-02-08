@@ -3,6 +3,8 @@ kind: pipeline
 type: docker
 name: default
 
+#test
+
 steps:
 - name: validate
   pull: if-not-exists
